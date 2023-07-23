@@ -13,5 +13,10 @@ UCLASS()
 class SPACETAXI_API ASpaceTaxiGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	int score;
+
+protected:
+	virtual void StartPlay() override;
 };
